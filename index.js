@@ -157,7 +157,7 @@ export const createImageProgress = ImageComponent =>
       if (!source || !source.uri) {
         // This is not a networked asset so fallback to regular image
         return (
-          <ImageComponent source={source} style={[style, borderRadius]} {...props}>
+          <ImageComponent source={source} style={style} {...props}>
             {children}
           </ImageComponent>
         );
